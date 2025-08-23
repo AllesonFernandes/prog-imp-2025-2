@@ -5,6 +5,7 @@ public class Exemplo02 {
     public static void main (String[] args) {
         int opcao;
         do {
+            System.out.println("");
             System.out.println("1. Imprimir valores de 1 a 100");
             System.out.println("2. Imprimir valores pares");
             System.out.println("3. Imprimir valores ímpares");
@@ -33,6 +34,16 @@ public class Exemplo02 {
                 for(int i = 3; i <= 99; i += 3){
                     System.out.print(i + ", ");
                 }
+            }
+            else if (opcao == 5){
+                for(int i = 3; i < 100; i++){
+                    if(i % 3 == 0 || i % 10 == 3){
+                        System.out.print(i + ", ");
+                    }
+                }
+            }
+            else {
+                System.out.println("Opção inválida!");
             }
 
         }
